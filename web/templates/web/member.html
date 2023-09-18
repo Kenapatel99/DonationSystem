@@ -1,0 +1,17 @@
+{% extends 'web/base.html' %}
+{% block body %}
+{% csrf_token %}
+ <form method="POST" action="{% url 'member' %}">
+    {% csrf_token %}
+    <center><label class="text-danger">{{ msg }}</label></center>
+    <div class="col-md-8">
+        <div class="form-group">
+            <label for="amount">Enter Amount</label>
+            <input id="amount" type="number" name="amount" class="form-control" required="required"/>
+        </div>
+        <br />
+        <div class="form-group">
+            <button class="btn btn-primary form-control"><span class="glyphicon glyphicon-log-in"></span> Pay Here</button>
+        </div>
+    </div>
+{% endblock %}
