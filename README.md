@@ -1,4 +1,4 @@
-# Donation System(For python 3)
+# Donation System
 OTP Login and Paytm-Payment Gateway On Python-Django
 
 * First clone the project, open your terminal and enter the command
